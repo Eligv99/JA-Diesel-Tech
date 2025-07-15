@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>JA Diesel Technician LLC</title>
+
+  <!-- Updated Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+ <div class="container-fluid p-0">
+    <!-- Sticky top bar with interactive sliding centered text -->
+    <div class="top-bar-container" aria-live="polite" aria-atomic="true" role="region" aria-label="Working hours and address">
+      <i id="slideLeft" class="fas fa-chevron-left left-chevron" role="button" tabindex="0" aria-label="Show previous info"></i>
+      <div class="slider-wrapper" aria-hidden="true">
+        <div id="sliderTexts" class="slider-texts">
+          Lun - Vie: 8:00AM - 5:00PM
+        </div>
+      </div>
+      <i id="slideRight" class="fas fa-chevron-right right-chevron" role="button" tabindex="0" aria-label="Show next info"></i>
+    </div>
+
+    <nav class="navbar" role="navigation" aria-label="Primary navigation">
+      <img src="assets/Alex Logo Diesel-01.png" alt="JRB Customs logo in light blue on dark background" class="logo" />
+      <div class="nav-links">
+        <a href="index.html" tabindex="0">Inicio</a>
+        <a href="service.html" tabindex="0">Servicios</a>
+        <a href="about.html">Sobre Nosotros</a>
+        <a href="contact.html" tabindex="0">Contacto</a>
+        <a href="gallery.html" tabindex="0">Galeria</a>
+      </div>
+      <a href="tel:+17875909830" class="phone-link" aria-label="Call us">(787) 590-9830<i class="fas fa-phone-alt ms-1"></i></a>
+      <i class="fas fa-bars hamburger" id="hamburgerBtn" aria-label="Open menu" role="button" tabindex="0"></i>
+    </nav>
+
+    <aside class="mobile-menu" id="mobileMenu" aria-hidden="true" aria-label="Mobile menu">
+      <i class="fas fa-times close-btn" id="closeMenuBtn" aria-label="Close menu" role="button" tabindex="0"></i>
+      <nav>
+        <a href="index.html" tabindex="0">Inicio</a>
+        <a href="service.html" tabindex="0">Servicios</a>
+        <a href="about.html">Sobre Nosotros</a>
+        <a href="contact.html" tabindex="0">Contacto</a>
+        <a href="gallery.html" tabindex="0">Galeria</a>
+        <a href="tel:+17875909830" class="mt-3 d-inline-block" tabindex="0" aria-label="Call us">(787) 590-9830 <i class="fas fa-phone-alt ms-1"></i></a>
+      </nav>
+    </aside>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div>
+      <h1>JA Diesel Technician LLC</h1>
+      <p>Restaurando autos muscle a la perfección</p>
+      <a href="#contact" class="btn btn-warning font-norm">Solicitar Consulta</a>
+      <a href="tel:+17875909830" class="btn-phone font-norm btn-phone-alt" aria-label="Call us">Llámanos: (787) 590-9830</a>
+    </div>
+  </section>
+
+  <!-- Bottom Hero Section with Image and Text -->
+  <section class="hero-bottom-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 order-md-1 order-2">
+          <h3>Una de las compañías con más experiencia en Puerto Rico</h3>
+          <p>En JA Diesel Technician LLC contamos con más de 30 años de experiencia en el campo de la mecánica Diesel. Nos especializamos en camiones heavy duty, light trucks diesel y generadores diesel.
+            Ofrecemos servicios de reparaciones de todo tipo, mantenimientos a flotas y contamos con scanners, que nos permiten hacer diagnósticos más precisos. También trabajamos sistemas DPF, reparamos botellas hidráulicas y hacemos inspecciones anuales requeridas por la Comisión.
+          </p>
+        </div>
+        <div class="col-md-6 order-md-2 order-1 text-center">
+          <img src="assets/IMG_4.jpg" alt="Camioneta Pickup Diesel" class="img-fluid rounded shadow" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+<div class="container padding-img py-5">
+  <h2 class="section-title mb-2">Nuestros Trabajos</h2>
+  <p class="center-text">
+    A continuación puedes ver una muestra de algunos de nuestros proyectos recientes. Si quieres ver más imágenes, visita nuestra<a href="galeria.html" class="text-primary" style="text-decoration: underline;">Galería</a>.
+  </p>
+
+  <div id="galeriaCarrusel" class="carousel slide gallery-carousel" data-bs-ride="carousel" data-bs-interval="6000" data-bs-pause="hover" data-bs-wrap="true" aria-label="Galería de imágenes">
+    <div class="carousel-inner position-relative">
+      <div class="carousel-item active">
+        <img src="assets/IMG_1.jpeg" class="d-block w-100 main-gallery-img" alt="Restauración principal">
+        <button class="img-arrow left" onclick="slideGallery(-1)" aria-label="Anterior">
+          <svg viewBox="0 0 32 32"><path d="M21 28L11 16l10-12" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="img-arrow right" onclick="slideGallery(1)" aria-label="Siguiente">
+          <svg viewBox="0 0 32 32"><path d="M11 28l10-12L11 4" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/IMG_2.jpeg" class="d-block w-100 main-gallery-img" alt="Detalle de trabajo">
+        <button class="img-arrow left" onclick="slideGallery(-1)" aria-label="Anterior">
+          <svg viewBox="0 0 32 32"><path d="M21 28L11 16l10-12" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="img-arrow right" onclick="slideGallery(1)" aria-label="Siguiente">
+          <svg viewBox="0 0 32 32"><path d="M11 28l10-12L11 4" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/IMG_3.jpg" class="d-block w-100 main-gallery-img" alt="Vista del taller">
+        <button class="img-arrow left" onclick="slideGallery(-1)" aria-label="Anterior">
+          <svg viewBox="0 0 32 32"><path d="M21 28L11 16l10-12" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="img-arrow right" onclick="slideGallery(1)" aria-label="Siguiente">
+          <svg viewBox="0 0 32 32"><path d="M11 28l10-12L11 4" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/IMG_4.jpg" class="d-block w-100 main-gallery-img" alt="Camioneta restaurada">
+        <button class="img-arrow left" onclick="slideGallery(-1)" aria-label="Anterior">
+          <svg viewBox="0 0 32 32"><path d="M21 28L11 16l10-12" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="img-arrow right" onclick="slideGallery(1)" aria-label="Siguiente">
+          <svg viewBox="0 0 32 32"><path d="M11 28l10-12L11 4" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/IMG_5.jpg" class="d-block w-100 main-gallery-img" alt="Motor en proceso">
+        <button class="img-arrow left" onclick="slideGallery(-1)" aria-label="Anterior">
+          <svg viewBox="0 0 32 32"><path d="M21 28L11 16l10-12" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="img-arrow right" onclick="slideGallery(1)" aria-label="Siguiente">
+          <svg viewBox="0 0 32 32"><path d="M11 28l10-12L11 4" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/IMG_6.jpg" class="d-block w-100 main-gallery-img" alt="Equipo trabajando">
+        <button class="img-arrow left" onclick="slideGallery(-1)" aria-label="Anterior">
+          <svg viewBox="0 0 32 32"><path d="M21 28L11 16l10-12" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="img-arrow right" onclick="slideGallery(1)" aria-label="Siguiente">
+          <svg viewBox="0 0 32 32"><path d="M11 28l10-12L11 4" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mini Carousel Thumbnails -->
+  <div class="mini-carousel mt-4 d-flex justify-content-center gap-2 flex-wrap">
+    <img src="assets/IMG_1.jpeg" class="mini-thumb" alt="Restauración principal" onclick="showGalleryImage(0)">
+    <img src="assets/IMG_2.jpeg" class="mini-thumb" alt="Detalle de trabajo" onclick="showGalleryImage(1)">
+    <img src="assets/IMG_3.jpg" class="mini-thumb" alt="Vista del taller" onclick="showGalleryImage(2)">
+    <img src="assets/IMG_4.jpg" class="mini-thumb" alt="Camioneta restaurada" onclick="showGalleryImage(3)">
+    <img src="assets/IMG_5.jpg" class="mini-thumb" alt="Motor en proceso" onclick="showGalleryImage(4)">
+    <img src="assets/IMG_6.jpg" class="mini-thumb" alt="Equipo trabajando" onclick="showGalleryImage(5)">
+  </div>
+</div>
+
+  <!-- Services Section -->
+ <section id="services" class="services-section py-5" style="background: #f4f8fb;">
+  <div class="container">
+    <h2 class="section-title mb-5" >Nuestros Servicios</h2>
+    <div class="row justify-content-center g-4">
+
+      <div class="col-12 col-md-3 text-center">
+        <div class="p-4 rounded shadow-sm" style="background: #fff;">
+          <div class="mb-3">
+            <i class="fas fa-car service-icon" style="color: #1976d2; font-size: 2.5rem;"></i>
+          </div>
+          <h3 class="service-title" style="color: #1976d2; font-size: 1.2rem;">Mantenimiento</h3>
+          <p class="service-description" style="font-size: 0.98rem; color: #444;">
+            Mantenimientos preventivos y correctivos para tu vehículo diesel, asegurando su óptimo funcionamiento y durabilidad.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-3 text-center">
+        <div class="p-4 rounded shadow-sm" style="background: #fff;">
+          <div class="mb-3">
+            <i class="fas fa-tachometer-alt service-icon" style="color: #e53935; font-size: 2.5rem;"></i>
+          </div>
+          <h3 class="service-title" style="color: #e53935; font-size: 1.2rem;">Diagnosticos</h3>
+          <p class="service-description" style="font-size: 0.98rem; color: #444;">
+            Diagnóstico avanzado con scanner para detectar fallas y optimizar el rendimiento de motores y sistemas electrónicos.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-3 text-center">
+        <div class="p-4 rounded shadow-sm" style="background: #fff;">
+          <div class="mb-3">
+            <i class="fas fa-tools service-icon" style="color: #1976d2; font-size: 2.5rem;"></i>
+          </div>
+          <h3 class="service-title" style="color: #1976d2; font-size: 1.2rem;">Servicio de Arreglo</h3>
+          <p class="service-description" style="font-size: 0.98rem; color: #444;">
+            Reparación profesional de motores, transmisiones y sistemas hidráulicos para restaurar el desempeño original.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-3 text-center">
+        <div class="p-4 rounded shadow-sm" style="background: #fff;">
+          <div class="mb-3">
+            <i class="fas fa-shield-alt service-icon" style="color: #e53935; font-size: 2.5rem;"></i>
+          </div>
+          <h3 class="service-title" style="color: #e53935; font-size: 1.2rem;">Generadores Comerciales</h3>
+          <p class="service-description" style="font-size: 0.98rem; color: #444;">
+            Mantenimiento y reparación de generadores comerciales diesel, garantizando energía confiable y continua.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Video Section -->
+<section id="video" class="" style="background: #f8fafc;">
+  <div class="container">
+    <h2 class="section-title mb-4">Introducción en Video</h2>
+    <p class="about-content mb-4">
+      Descubre más sobre nuestro trabajo y pasión por la mecanica Diesel.
+    </p>
+    <div class="ratio ratio-16x9">
+      <video controls poster="assets/JA_video.mp4" style="width:100%;height:auto;">
+        <source src="assets/JA_video_2.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de video.
+      </video>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+  <section id="contact" class="bg-dark text-light m-bot">
+    <div class="container">
+      <h2 class="section-title">Contáctanos</h2>
+      <p class="about-content">
+      Para cotización puede llenar este formulario con su informacion o ir a la seccion de <a href="about.html" tabindex="0">contacto</a> para agendar una cita.
+      </p>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label">Nombre Completo</label>
+              <input type="text" class="form-control" id="name" placeholder="Tu nombre completo" required />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning w-100">Enviar Mensaje</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2024 JA Diesel Technician LLC. Todos los derechos reservados.</p>
+      <small>Restauración de Autos Muscle y Mejoras de Rendimiento</small>
+    </div>
+  </footer>
+
+  <!-- Updated Bootstrap 5.3.3 JS -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
+
+      function showGalleryImage(idx) {
+      const carousel = document.getElementById('galeriaCarrusel');
+      if (!carousel) return;
+      const bsCarousel = bootstrap.Carousel.getOrCreateInstance(carousel);
+      bsCarousel.to(idx);
+
+      // Highlight the active thumbnail
+      document.querySelectorAll('.mini-thumb').forEach((img, i) => {
+        img.classList.toggle('active', i === idx);
+      });
+    }
+
+    // Optional: keep thumbnails in sync with carousel slide
+    document.getElementById('galeriaCarrusel').addEventListener('slid.bs.carousel', function (e) {
+      document.querySelectorAll('.mini-thumb').forEach((img, i) => {
+        img.classList.toggle('active', i === e.to);
+      });
+    });
+  })();
+    
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

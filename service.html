@@ -1,0 +1,105 @@
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>JRB Performance - Servicios</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  
+</head>
+
+<body>
+
+ <div class="container-fluid p-0">
+    <!-- Sticky top bar with interactive sliding centered text -->
+    <div class="top-bar-container" aria-live="polite" aria-atomic="true" role="region" aria-label="Working hours and address">
+      <i id="slideLeft" class="fas fa-chevron-left left-chevron" role="button" tabindex="0" aria-label="Show previous info"></i>
+      <div class="slider-wrapper" aria-hidden="true">
+        <div id="sliderTexts" class="slider-texts">
+          Lun - Vie: 8:00AM - 5:00PM
+        </div>
+      </div>
+      <i id="slideRight" class="fas fa-chevron-right right-chevron" role="button" tabindex="0" aria-label="Show next info"></i>
+    </div>
+
+    <nav class="navbar" role="navigation" aria-label="Primary navigation">
+      <img src="assets/Alex Logo Diesel-01.png" alt="JRB Customs logo in light blue on dark background" class="logo" />
+      <div class="nav-links">
+        <a href="index.html" tabindex="0">Inicio</a>
+        <a href="service.html" tabindex="0">Servicios</a>
+        <a href="about.html">Sobre Nosotros</a>
+        <a href="contact.html" tabindex="0">Contacto</a>
+        <a href="gallery.html" tabindex="0">Galeria</a>
+      </div>
+      <a href="tel:+1234567890" class="phone-link" aria-label="Call us">(123) 456-7890 <i class="fas fa-phone-alt ms-1"></i></a>
+      <i class="fas fa-bars hamburger" id="hamburgerBtn" aria-label="Open menu" role="button" tabindex="0"></i>
+    </nav>
+
+    <aside class="mobile-menu" id="mobileMenu" aria-hidden="true" aria-label="Mobile menu">
+      <i class="fas fa-times close-btn" id="closeMenuBtn" aria-label="Close menu" role="button" tabindex="0"></i>
+      <nav>
+    <a href="index.html" tabindex="0">Inicio</a>
+        <a href="service.html" tabindex="0">Servicios</a>
+        <a href="about.html">Sobre Nosotros</a>
+        <a href="contact.html" tabindex="0">Contacto</a>
+        <a href="gallery.html" tabindex="0">Galeria</a>
+        <a href="tel:+1234567890" class="mt-3 d-inline-block" tabindex="0" aria-label="Call us">(123) 456-7890 <i class="fas fa-phone-alt ms-1"></i></a>
+      </nav>
+    </aside>
+  </div>
+
+
+  <!-- Sección de Servicios -->
+  <section class="services-section" id="services">
+  <h2>Nuestros Servicios</h2>
+
+  <div class="service-item" tabindex="0">
+    <i class="fas fa-cogs service-icon" aria-hidden="true"></i>
+    <h3 class="service-title">Mantenimiento</h3>
+    <p class="service-description">
+      Realizamos mantenimientos preventivos y correctivos para vehículos diesel, incluyendo cambios de aceite, inspección de frenos, revisión de fluidos y ajustes generales. Nuestro objetivo es asegurar el óptimo funcionamiento y prolongar la vida útil de tu motor.
+    </p>
+  </div>
+
+  <div class="service-item" tabindex="0">
+    <i class="fas fa-tachometer-alt service-icon" aria-hidden="true"></i>
+    <h3 class="service-title">Diagnosticos</h3>
+    <p class="service-description">
+      Utilizamos equipos de diagnóstico avanzados y scanners para detectar fallas en motores y sistemas electrónicos. Ofrecemos análisis detallados y soluciones precisas para optimizar el rendimiento y la eficiencia de tu vehículo.
+    </p>
+  </div>
+
+  <div class="service-item" tabindex="0">
+    <i class="fas fa-tools service-icon" aria-hidden="true"></i>
+    <h3 class="service-title">Servicio de Arreglo</h3>
+    <p class="service-description">
+      Brindamos reparación profesional de motores, transmisiones y sistemas hidráulicos. Nuestro equipo está capacitado para restaurar el desempeño original de tu vehículo, utilizando piezas de alta calidad y técnicas especializadas.
+    </p>
+  </div>
+
+  <div class="service-item" tabindex="0">
+    <i class="fas fa-shield-alt service-icon" aria-hidden="true"></i>
+    <h3 class="service-title">Generadores Comerciales</h3>
+    <p class="service-description">
+      Ofrecemos mantenimiento y reparación de generadores comerciales diesel, asegurando energía confiable y continua para tu negocio. Realizamos inspecciones, cambios de componentes y ajustes para maximizar la eficiencia y la seguridad.
+    </p>
+  </div>
+</section>
+
+  <footer>
+    <div class="container">
+      <p>© 2024 JA Diesel Technician LLC. Todos los derechos reservados.</p>
+      <small>Restauración de Autos Muscle y Mejoras de Rendimiento</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
