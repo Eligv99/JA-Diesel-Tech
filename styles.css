@@ -313,7 +313,7 @@ nav.navbar .logo {
 }
 .services-section h2 {
   font-weight: 800;
-  font-size: 2.5rem;
+  font-size: 2rem;
   border-bottom: 3px solid var(--main-blue);
   padding-bottom: 10px;
   margin-bottom: 40px;
@@ -792,5 +792,33 @@ footer {
   }
   .hero-bottom-section {
     padding: 40px 15px 15px;
+  }
+}
+
+/* Responsive text for mobile (applies to all pages, including services) */
+@media (max-width: 576px) {
+  .section-title,
+  .h2_service {
+    font-size: 1.5rem;
+    padding-top: 18px;
+    padding-bottom: 6px;
+    margin-bottom: 24px;
+    margin-top: 10px;
+  }
+  .about-content,
+  .service-description,
+  .center-text,
+  .services-section h2,
+  .service-title {
+    font-size: 0.98rem !important;
+  }
+  .service-title {
+    font-size: 1.1rem !important;
+  }
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+  .hero p {
+    font-size: 1rem;
   }
 }
