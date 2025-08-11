@@ -610,7 +610,7 @@ footer {
 ========================================================== */
 .about-section {
   max-width: 960px;
-  margin: 60px auto 80px;
+  /*margin: 60px auto 80px; ? */
   padding: 0 15px;
   color: var(--main-text);
   background-color: #fff;
@@ -634,7 +634,7 @@ footer {
 }
 .about-image {
   max-width: 100%;
-  margin: 40px auto 0;
+  margin: 40px auto 40px;
   display: block;
   border-radius: 12px;
   box-shadow: 0 0 20px var(--main-blue-light);
@@ -761,7 +761,7 @@ footer {
     padding-top: 25px !important;
   }
   #services .section-title {
-    font-size: 2rem !important;
+    font-size: 1.8rem !important;
   }
   .services-section h2 {
     margin-top: 2.5rem !important;
@@ -820,5 +820,21 @@ footer {
   }
   .hero p {
     font-size: 1rem;
+  }
+}
+
+/* Responsive text for mobile (applies to about page and all pages) */
+@media (max-width: 576px) {
+  .about-title {
+    font-size: 1.5rem !important;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  .about-content {
+    font-size: 0.98rem !important;
+  }
+  .about-image {
+    max-width: 100%;
+    height: auto;
   }
 }
