@@ -56,7 +56,7 @@ const hamburgerBtn = document.getElementById('hamburgerBtn');
 
     const slides = [
       "Mon - Fri: 8:00AM - 5:00PM",
-      "1234 Custom St, City, State"
+      "Carr. 175 Km 10.1, Trujillo Alto, PR`"
     ];
     let currentSlide = 0;
     let autoSlideInterval = null;
